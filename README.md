@@ -33,3 +33,8 @@ python train.py
 cd main
 python test.py
 ```
+
+# web服务测试模型
+```shell
+python server.py
+```
