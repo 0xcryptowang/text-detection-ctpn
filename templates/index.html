@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CTPN模型文本检测</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.staticfile.org/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <style>
+        .form-content-container {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <form id="upload-form" action="/predict" method="post" enctype="multipart/form-data">
+            <h5 style="padding:15px">CTPN 模型文本检测</h5>
+            <div class="form-content-container">
+                <input id="upload_images" type="file" name="image"/>
+                <input id="upload_button" type="submit" value="提交"/>
+            </div>
+        </form>
+    </div>
+    <hr/>
+</div>
+</body>
+</html>
