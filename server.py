@@ -86,7 +86,7 @@ def load_model_and_predict():
         _, buffer = cv2.imencode('.jpg', img)
         pic_str = base64.b64encode(buffer)
         pic_str = 'data:image/jpg;base64,' + pic_str.decode()
-        return render_template('result.html', image_base_data=pic_str)
+        return render_template('index.html', image_base_data=pic_str)
 
     return predict_image
 
